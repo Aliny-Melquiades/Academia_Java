@@ -72,15 +72,15 @@ class CarrinhoDeCompras {
 
 public class carrinho {
     public static void main(String[] args) {
-        Produto produto1 = new Produto("Camisa", 50);
-        Produto produto2 = new Produto("Calça", 80);
-        Produto produto3 = new Produto("Sapato", 120);
+        Produto produto1 = new Produto("Vestido Preto", 120);
+        Produto produto2 = new Produto("Coturno Bege", 170);
+        Produto produto3 = new Produto("Lenço Xadrez, Branco e Rosa", 90);
 
         CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
 
-        carrinho.adicionarItem(produto1, 2);
+        carrinho.adicionarItem(produto1, 3);
         carrinho.adicionarItem(produto2, 1);
-        carrinho.adicionarItem(produto3, 3);
+        carrinho.adicionarItem(produto3, 5);
 
         carrinho.listarProdutos();
 
