@@ -12,15 +12,15 @@ public class Imposto {
         sc.close();
         		
         	//Isento
-        	if (salario <= 1903.98) {
+        	if (salario <= 2.112) {
 			        System.out.print(salario + " - Isento De Pagar IR."); }
         	
         	//7.5%
-        	else if (salario <= 2826.65) {
+        	else if (salario <= 2826.66) {
 		        System.out.print(salario - (salario * 0.075) + " - Salário com Imposto descontado."); }        
                  
         	//15%
-        	else if (salario <= 3751.05) {
+        	else if (salario <= 3751.06) {
 		        System.out.print(salario - (salario * 0.15) + " - Salário com Imposto descontado."); }  
         	
             //22.5%                              }
