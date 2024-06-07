@@ -1,9 +1,15 @@
-public class Imposto {
-
+package pacote;
+	
+	    class Imposto { 
+		
+		 public static void main(String[] args) {
+		 }
+		 
     // Classe Pessoa
-    public static class Pessoa {
-        private String nome;
-        private double salario;
+        class Pessoa {
+        	
+        public String nome;
+        public double salario;
 
         public Pessoa(String nome, double salario) {
             this.nome = nome;
@@ -18,9 +24,10 @@ public class Imposto {
             return salario;
         }
     }
+}
 
     // Classe FaixaImpostoDeRenda
-    public class FaixaImpostoDeRenda {
+        class FaixaImpostoDeRenda {
         public static int obterFaixa(double salario) {
             if (salario <= 1903.98) {
                 return 0; // Isento
@@ -37,9 +44,9 @@ public class Imposto {
     }
 
     // Classe ImpostoDeRenda
-    public static class ImpostoDeRenda {
-        private Pessoa pessoa;
-        private int faixa;
+    class ImpostoDeRenda {
+        public Pessoa pessoa;
+        public int faixa;
 
         public ImpostoDeRenda(Pessoa pessoa) {
             this.pessoa = pessoa;
@@ -77,11 +84,15 @@ public class Imposto {
     }
 
     // Classe principal
-    public class Principal {
+    class Principal {
         public static void main(String[] args) {
-            Pessoa pessoa1 = new Pessoa("Aliny", 3200.00);
-            Pessoa pessoa2 = new Pessoa("Aparecida", 1700.00);
-            Pessoa pessoa3 = new Pessoa("Sérgio", 5100.00);
+        	
+        	String nome;
+            double salario;
+            
+            Pessoa pessoa1 = new Pessoa("Aliny" , 3.200);
+            Pessoa pessoa2 = new Pessoa("Aparecida", 1.700);
+            Pessoa pessoa3 = new Pessoa("Sérgio", 5.200);
 
             ImpostoDeRenda ir1 = new ImpostoDeRenda(pessoa1);
             ImpostoDeRenda ir2 = new ImpostoDeRenda(pessoa2);
@@ -95,4 +106,3 @@ public class Imposto {
         }
     }
 
-}
