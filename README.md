@@ -1,1 +1,1 @@
-Nesse repositório estarão meus códigos da Academia Java Atos 2024.
+☕ Nesse repositório estarão meus códigos da Academia Java 2024.
